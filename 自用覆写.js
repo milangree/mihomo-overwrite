@@ -245,7 +245,7 @@ function main(config) {
       type: "http",
     },
     youtube_ip: {
-      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/yt.yaml",
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/yt.yaml",
       path: "./ruleset/youtube_ip.yaml",
       behavior: "ipcidr",
       interval: 86400,
