@@ -316,6 +316,14 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
+    epic: {
+      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.yaml",
+      path: "./ruleset/epic.yaml",
+      behavior: "classical",
+      interval: 86400,
+      format: "yaml",
+      type: "http",
+    },
   });
 
   config["rules"] = [
@@ -326,6 +334,7 @@ function main(config) {
     "RULE-SET,openai,AIGC",
     "RULE-SET,claude,AIGC",
     "RULE-SET,steam,手动选择",
+    "RULE-SET,epic,手动选择",
     "RULE-SET,ads_domain,应用净化",
     "RULE-SET,bilibili1_domain,哔哩哔哩",
     "RULE-SET,bilibili2_domain,哔哩哔哩",
