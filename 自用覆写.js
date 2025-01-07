@@ -128,6 +128,18 @@ function main(config) {
       proxies: ["DIRECT", "手动选择", "香港节点", "台湾节点"],
     },
     {
+      icon: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/steam.png",
+      name: "Steam",
+      type: "select",
+      proxies: ["DIRECT", "手动选择", "自动选择", "香港节点", "新加坡节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其他地区"],
+    },
+    {
+      icon: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/epic.png",
+      name: "Epic",
+      type: "select",
+      proxies: ["DIRECT", "手动选择", "自动选择", "香港节点", "新加坡节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其他地区"],
+    },
+    {
       icon: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png",
       "include-all": true,
       "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网",
@@ -271,7 +283,7 @@ function main(config) {
     bing: {
       url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml",
       path: "./ruleset/bing.yaml",
-      behavior: "classical",
+      behavior: "domain",
       interval: 86400,
       format: "yaml",
       type: "http",
@@ -309,7 +321,7 @@ function main(config) {
       type: "http",
     },
     steam: {
-      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml",
+      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/steam.yaml",
       path: "./ruleset/steam.yaml",
       behavior: "classical",
       interval: 86400,
@@ -333,8 +345,8 @@ function main(config) {
     "RULE-SET,bard,AIGC",
     "RULE-SET,openai,AIGC",
     "RULE-SET,claude,AIGC",
-    "RULE-SET,steam,手动选择",
-    "RULE-SET,epic,手动选择",
+    "RULE-SET,steam,Steam",
+    "RULE-SET,epic,Epic",
     "RULE-SET,ads_domain,应用净化",
     "RULE-SET,bilibili1_domain,哔哩哔哩",
     "RULE-SET,bilibili2_domain,哔哩哔哩",
