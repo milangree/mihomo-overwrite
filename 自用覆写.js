@@ -3,7 +3,7 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网",
+      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
       name: "手动选择",
       type: "select",
 	  url: "http://www.gstatic.com/generate_204",
@@ -12,7 +12,7 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网",
+      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
       name: "自动选择",
       type: "url-test",
       interval: 300,
@@ -20,7 +20,7 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网",
+      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
       filter: "(?i)香港|Hong Kong|HK",
       name: "香港节点",
       type: "url-test",
@@ -29,7 +29,7 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网",
+      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
       filter: "(?i)新加坡|Singapore|SG",
       name: "新加坡节点",
       type: "url-test",
@@ -38,7 +38,7 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网",
+      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
       filter: "(?i)日本|Japan|JP",
       name: "日本节点",
       type: "url-test",
@@ -47,7 +47,7 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网",
+      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
       filter: "(?i)台湾|Taiwan|TW",
       name: "台湾节点",
       type: "url-test",
@@ -56,7 +56,7 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网",
+      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
       filter: "(?i)韩国|Korea|KR",
       name: "韩国节点",
       type: "url-test",
@@ -65,7 +65,7 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网",
+      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
       filter: "(?i)美国|US",
       name: "美国节点",
       type: "url-test",
@@ -74,7 +74,7 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/UN.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|韩国|Korea|KR|South Korea|美国|US|台湾|Taiwan|TW|日本|Japan|JP|新加坡|Singapore|SG|香港|Hong Kong|HK",
+      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群|韩国|Korea|KR|South Korea|美国|US|台湾|Taiwan|TW|日本|Japan|JP|新加坡|Singapore|SG|香港|Hong Kong|HK",
       name: "其他地区",
       type: "select",
       interval: 300,
