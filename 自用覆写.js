@@ -21,7 +21,7 @@ function main(config) {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png",
       "include-all": true,
       "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
-      filter: "(?i)香港|Hong Kong|HK",
+      filter: "(?i)香港|Hong Kong|HK|Hongkong",
       name: "香港",
       type: "url-test",
       interval: 300,
@@ -74,7 +74,7 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/UN.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群|韩国|Korea|KR|South Korea|美国|US|台湾|Taiwan|TW|日本|Japan|JP|新加坡|Singapore|SG|香港|Hong Kong|HK",
+      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群|韩国|Korea|KR|South Korea|美国|US|台湾|Taiwan|TW|日本|Japan|JP|新加坡|Singapore|SG|香港|Hong Kong|HK|Hongkong|United",
       name: "其他地区",
       type: "select",
       interval: 300,
