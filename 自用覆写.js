@@ -169,7 +169,7 @@ function main(config) {
       type: "http",
     },
     ads_domain: {
-      url: "https://github.com/privacy-protection-tools/anti-AD/blob/master/anti-ad-clash.yaml",
+      url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/anti-ad-clash.yaml",
       path: "./ruleset/ads_domain.yaml",
       behavior: "domain",
       interval: 86400,
@@ -185,7 +185,7 @@ function main(config) {
       type: "http",
     },
     telegram_domain: {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.yaml",
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/telegram.yaml",
       path: "./ruleset/telegram_domain.yaml",
       behavior: "domain",
       interval: 86400,
