@@ -169,7 +169,7 @@ function main(config) {
       type: "http",
     },
     ads_domain: {
-      url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml",
+      url: "https://raw.githubusercontent.com/milangree/mihomo-party-overwrite/refs/heads/main/antiads.yaml",
       path: "./ruleset/ads_domain.yaml",
       behavior: "domain",
       interval: 86400,
