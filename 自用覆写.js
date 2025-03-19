@@ -142,6 +142,14 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
+    ads_domain: {
+      url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml",
+      path: "./ruleset/ads_domain.yaml",
+      behavior: "domain",
+      interval: 86400,
+      format: "yaml",
+      type: "http",
+    },
     cn_domain: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml",
       path: "./ruleset/cn_domain.yaml",
