@@ -152,7 +152,7 @@ function main(config) {
     },
     telegram_ip: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.yaml",
-      path: "./ruleset/telegram_domain.yaml",
+      path: "./ruleset/telegram_ip.yaml",
       behavior: "ipcidr",
       interval: 86400,
       format: "yaml",
