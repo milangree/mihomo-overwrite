@@ -81,7 +81,7 @@ function main(config) {
     },
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/steam.png",
-      name: "应用进化",
+      name: "应用净化",
       type: "select",
       proxies: ["DIRECT"],
     },
