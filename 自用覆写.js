@@ -8,7 +8,7 @@ function main(config) {
       name: "手动选择",
       type: "select",
 	  url: "http://www.gstatic.com/generate_204",
-      proxies: ["DIRECT", "自动选择", "香港", "台湾", "新加坡", "日本", "韩国", "美国", "其他地区"],
+      proxies: ["DIRECT", "自动选择", "香港组", "台湾组", "新加坡组", "日本组", "韩国组", "美国组", "其他地区"],
     },
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png",
