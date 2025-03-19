@@ -257,7 +257,7 @@ function main(config) {
     steam: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/steam.yaml",
       path: "./ruleset/steam.yaml",
-      behavior: "classical",
+      behavior: "domain",
       interval: 86400,
       format: "yaml",
       type: "http",
