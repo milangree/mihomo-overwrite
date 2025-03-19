@@ -80,6 +80,12 @@ function main(config) {
       interval: 300,
     },
     {
+      icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/steam.png",
+      name: "应用进化",
+      type: "select",
+      proxies: ["DIRECT"],
+    },
+    {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png",
       name: "Telegram",
       type: "select",
@@ -284,6 +290,7 @@ function main(config) {
     "RULE-SET,private,DIRECT",
     "RULE-SET,steam,Steam",
     "RULE-SET,epic,Epic",
+    "RULE-SET,ads_domain,应用净化",
     "RULE-SET,bilibili1_domain,哔哩哔哩",
     "RULE-SET,bilibili2_domain,哔哩哔哩",
     "RULE-SET,youtube_domain,Youtube",
