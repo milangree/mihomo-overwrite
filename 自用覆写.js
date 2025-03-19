@@ -1,5 +1,5 @@
 function main(config) {
-	//	代理组
+	// 代理组
   config["proxy-groups"] = [
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png",
@@ -78,72 +78,72 @@ function main(config) {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png",
       name: "Telegram",
       type: "select",
-      proxies: ["DIRECT", "手动选择", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
+      proxies: ["DIRECT", "手动选择", "自动选择", "香港组", "新加坡组", "台湾组", "日本组", "韩国组", "美国组", "其他地区"],
     },
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png",
       name: "Google",
       type: "select",
-      proxies: ["DIRECT", "手动选择", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
+      proxies: ["DIRECT", "手动选择", "自动选择", "香港组", "新加坡组", "台湾组", "日本组", "韩国组", "美国组", "其他地区"],
     },
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png",
       name: "Microsoft",
       type: "select",
-      proxies: ["DIRECT", "手动选择", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
+      proxies: ["DIRECT", "手动选择", "自动选择", "香港组", "新加坡组", "台湾组", "日本组", "韩国组", "美国组", "其他地区"],
     },
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png",
       name: "Youtube",
       type: "select",
-      proxies: ["DIRECT", "手动选择", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
+      proxies: ["DIRECT", "手动选择", "自动选择", "香港组", "新加坡组", "台湾组", "日本组", "韩国组", "美国组", "其他地区"],
     },
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Netflix.png",
       name: "Netflix",
       type: "select",
-      proxies: ["DIRECT", "手动选择", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
+      proxies: ["DIRECT", "手动选择", "自动选择", "香港组", "新加坡组", "台湾组", "日本组", "韩国组", "美国组", "其他地区"],
     },
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bili.png",
       name: "哔哩哔哩",
       type: "select",
-      proxies: ["DIRECT", "手动选择", "香港", "台湾"],
+      proxies: ["DIRECT", "手动选择", "香港组", "台湾组"],
     },
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/steam.png",
       name: "Steam",
       type: "select",
-      proxies: ["DIRECT", "手动选择", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
+      proxies: ["DIRECT", "手动选择", "自动选择", "香港组", "新加坡组", "台湾组", "日本组", "韩国组", "美国组", "其他地区"],
     },
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/epic.png",
       name: "Epic",
       type: "select",
-      proxies: ["DIRECT", "手动选择", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
+      proxies: ["DIRECT", "手动选择", "自动选择", "香港组", "新加坡组", "台湾组", "日本组", "韩国组", "美国组", "其他地区"],
     },
     {
       icon: "https://raw.githubusercontent.com/milangree/mihomo-party-overwrite/refs/heads/main/electronic-arts.png",
       name: "EA",
       type: "select",
-      proxies: ["DIRECT", "手动选择", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
+      proxies: ["DIRECT", "手动选择", "自动选择", "香港组", "新加坡组", "台湾组", "日本组", "韩国组", "美国组", "其他地区"],
     },
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png",
       "include-all": true,
       "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
-      proxies: ["DIRECT", "手动选择", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
+      proxies: ["DIRECT", "手动选择", "自动选择", "香港组", "新加坡组", "台湾组", "日本组", "韩国组", "美国组", "其他地区"],
       name: "GLOBAL",
       type: "select",
     }
   ];
-	//	规则组
+	// 规则组
   if (!config['rule-providers']) {
     config['rule-providers'] = {};
   }
   config["rule-providers"] = Object.assign(config["rule-providers"],
 	{
-	// 内网路由
+    // 内网路由
     private_domain: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/private.yaml",
       path: "./ruleset/private_domain.yaml",
@@ -160,7 +160,7 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-	// 国内路由
+    // 国内路由
     cn_domain: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.yaml",
       path: "./ruleset/cn_domain.yaml",
@@ -177,8 +177,8 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-	// 非国内路由
-	"geolocation-!cn": {
+    // 非国内路由
+    "geolocation-!cn": {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml",
       path: "./ruleset/geolocation-!cn.yaml",
       behavior: "domain",
@@ -186,7 +186,7 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-	// Telegram
+    // Telegram
     telegram_domain: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/telegram.yaml",
       path: "./ruleset/telegram_domain.yaml",
@@ -203,7 +203,7 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-	// Google
+    // Google
     google_domain: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google.yaml",
       path: "./ruleset/google_domain.yaml",
@@ -220,7 +220,7 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-	// Microsoft
+    // Microsoft
     microsoft: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google.yaml",
       path: "./ruleset/microsoft.yaml",
@@ -229,7 +229,7 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-	// YouTube
+    // YouTube
     youtube_domain: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/youtube.yaml",
       path: "./ruleset/youtube_domain.yaml",
@@ -246,7 +246,7 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-	// Netflix
+    // Netflix
     netflix_domain: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/netflix.yaml",
       path: "./ruleset/netflix_ip.yaml",
@@ -263,7 +263,7 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-	// 哔哩哔哩
+    // 哔哩哔哩
     bilibili_domain: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geosite/bilibili.yaml",
       path: "./ruleset/bilibili_domain.yaml",
@@ -280,7 +280,7 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-	// Steam
+    // Steam
     steam: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/steam.yaml",
       path: "./ruleset/steam.yaml",
@@ -289,7 +289,7 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-	// Epic
+    // Epic
     epic: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/epicgames.yaml",
       path: "./ruleset/epic.yaml",
@@ -298,7 +298,7 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-	// EA 
+    // EA 
     ea: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/ea.yaml",
       path: "./ruleset/ea.yaml",
@@ -309,6 +309,7 @@ function main(config) {
     },
   });
 
+	// 规则策略
   config["rules"] = [
     "RULE-SET,private_domain,DIRECT",
     "RULE-SET,private_ip,DIRECT",
@@ -319,7 +320,7 @@ function main(config) {
     "RULE-SET,telegram_ip,Telegram",
     "RULE-SET,google_domain,Google",
     "RULE-SET,google_ip,Google",
-	"RULE-SET,microsoft,Microsoft",
+    "RULE-SET,microsoft,Microsoft",
     "RULE-SET,youtube_domain,Youtube",
     "RULE-SET,youtube_ip,Youtube",
     "RULE-SET,netflix_domain,Netflix",
