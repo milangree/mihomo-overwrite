@@ -80,12 +80,6 @@ function main(config) {
       interval: 300,
     },
     {
-      icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/steam.png",
-      name: "应用净化",
-      type: "select",
-      proxies: ["DIRECT"],
-    },
-    {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png",
       name: "Telegram",
       type: "select",
@@ -143,14 +137,6 @@ function main(config) {
     private: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml",
       path: "./ruleset/private.yaml",
-      behavior: "domain",
-      interval: 86400,
-      format: "yaml",
-      type: "http",
-    },
-    ads_domain: {
-      url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml",
-      path: "./ruleset/ads_domain.yaml",
       behavior: "domain",
       interval: 86400,
       format: "yaml",
@@ -290,7 +276,6 @@ function main(config) {
     "RULE-SET,private,DIRECT",
     "RULE-SET,steam,Steam",
     "RULE-SET,epic,Epic",
-    "RULE-SET,ads_domain,应用净化",
     "RULE-SET,bilibili1_domain,哔哩哔哩",
     "RULE-SET,bilibili2_domain,哔哩哔哩",
     "RULE-SET,youtube_domain,Youtube",
