@@ -1,4 +1,5 @@
 function main(config) {
+	//	代理组
   config["proxy-groups"] = [
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png",
@@ -7,7 +8,7 @@ function main(config) {
       name: "手动选择",
       type: "select",
 	  url: "http://www.gstatic.com/generate_204",
-      proxies: ["DIRECT", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
+      proxies: ["DIRECT", "自动选择", "香港", "台湾", "新加坡", "日本", "韩国", "美国", "其他地区"],
     },
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png",
@@ -20,16 +21,22 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
-      filter: "(?i)香港|Hong Kong|HK|Hongkong",
+      filter: "(?i)香港|HK|Hong Kong|HongKong",
       name: "香港",
+      type: "url-test",
+      interval: 300,
+    },
+    {
+      icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png",
+      "include-all": true,
+      filter: "(?i)台湾|Taiwan|TW",
+      name: "台湾",
       type: "url-test",
       interval: 300,
     },
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
       filter: "(?i)新加坡|Singapore|SG",
       name: "新加坡",
       type: "url-test",
@@ -38,25 +45,14 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
       filter: "(?i)日本|Japan|JP",
       name: "日本",
       type: "url-test",
       interval: 300,
     },
     {
-      icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png",
-      "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
-      filter: "(?i)台湾|Taiwan|TW",
-      name: "台湾",
-      type: "url-test",
-      interval: 300,
-    },
-    {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
       filter: "(?i)韩国|Korea|KR",
       name: "韩国",
       type: "url-test",
@@ -65,8 +61,7 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
-      filter: "(?i)美国|US",
+      filter: "(?i)美国|United States|UnitedStates|America|US",
       name: "美国",
       type: "url-test",
       interval: 300,
@@ -74,7 +69,7 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/UN.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群|韩国|Korea|KR|South Korea|美国|US|台湾|Taiwan|TW|日本|Japan|JP|新加坡|Singapore|SG|香港|Hong Kong|HK|Hongkong|United",
+      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群|香港|HK|Hong Kong|HongKong|台湾|Taiwan|TW|新加坡|Singapore|SG|日本|Japan|JP|韩国|Korea|KR|美国|United States|UnitedStates|America|US",
       name: "其他地区",
       type: "select",
       interval: 300,
@@ -88,6 +83,12 @@ function main(config) {
     {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png",
       name: "Google",
+      type: "select",
+      proxies: ["DIRECT", "手动选择", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
+    },
+    {
+      icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Microsoft.png",
+      name: "Microsoft",
       type: "select",
       proxies: ["DIRECT", "手动选择", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
     },
@@ -122,42 +123,70 @@ function main(config) {
       proxies: ["DIRECT", "手动选择", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
     },
     {
+      icon: "https://raw.githubusercontent.com/milangree/mihomo-party-overwrite/refs/heads/main/electronic-arts.png",
+      name: "EA",
+      type: "select",
+      proxies: ["DIRECT", "手动选择", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
+    },
+    {
       icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png",
       "include-all": true,
-      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网",
+      "exclude-filter": "(?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|机场|官网|TG|群",
       proxies: ["DIRECT", "手动选择", "自动选择", "香港", "新加坡", "台湾", "日本", "韩国", "美国", "其他地区"],
       name: "GLOBAL",
       type: "select",
     }
   ];
+	//	规则组
   if (!config['rule-providers']) {
     config['rule-providers'] = {};
   }
-  config["rule-providers"] = Object.assign(config["rule-providers"], {
-    private: {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml",
-      path: "./ruleset/private.yaml",
+  config["rule-providers"] = Object.assign(config["rule-providers"],
+	{
+	// 内网路由
+    private_domain: {
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/private.yaml",
+      path: "./ruleset/private_domain.yaml",
       behavior: "domain",
       interval: 86400,
       format: "yaml",
       type: "http",
     },
+    private_ip: {
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/private.yaml",
+      path: "./ruleset/private_ip.yaml",
+      behavior: "ipcidr",
+      interval: 86400,
+      format: "yaml",
+      type: "http",
+    },
+	// 国内路由
     cn_domain: {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml",
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.yaml",
       path: "./ruleset/cn_domain.yaml",
       behavior: "domain",
       interval: 86400,
       format: "yaml",
       type: "http",
     },
-    telegram_ip: {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.yaml",
-      path: "./ruleset/telegram_ip.yaml",
+    cn_ip: {
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.yaml",
+      path: "./ruleset/cn_ip.yaml",
       behavior: "ipcidr",
       interval: 86400,
       format: "yaml",
       type: "http",
     },
+	// 非国内路由
+	"geolocation-!cn": {
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml",
+      path: "./ruleset/geolocation-!cn.yaml",
+      behavior: "domain",
+      interval: 86400,
+      format: "yaml",
+      type: "http",
+    },
+	// Telegram
     telegram_domain: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/telegram.yaml",
       path: "./ruleset/telegram_domain.yaml",
@@ -166,64 +195,43 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
+    telegram_ip: {
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/telegram.yaml",
+      path: "./ruleset/telegram_ip.yaml",
+      behavior: "ipcidr",
+      interval: 86400,
+      format: "yaml",
+      type: "http",
+    },
+	// Google
     google_domain: {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.yaml",
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google.yaml",
       path: "./ruleset/google_domain.yaml",
       behavior: "domain",
       interval: 86400,
       format: "yaml",
       type: "http",
     },
-    "geolocation-!cn": {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml",
-      path: "./ruleset/geolocation-!cn.yaml",
-      behavior: "domain",
-      interval: 86400,
-      format: "yaml",
-      type: "http",
-    },
-    cn_ip: {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml",
-      path: "./ruleset/cn_ip.yaml",
-      behavior: "ipcidr",
-      interval: 86400,
-      format: "yaml",
-      type: "http",
-    },
-    bahamut_domain: {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bahamut.yaml",
-      path: "./ruleset/bahamut_domain.yaml",
-      behavior: "domain",
-      interval: 86400,
-      format: "yaml",
-      type: "http",
-    },
-    bilibili1_domain: {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili.yaml",
-      path: "./ruleset/bilibili1_domain.yaml",
-      behavior: "domain",
-      interval: 86400,
-      format: "yaml",
-      type: "http",
-    },
-    bilibili2_domain: {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bilibili2.yaml",
-      path: "./ruleset/bilibili2_domain.yaml",
-      behavior: "domain",
-      interval: 86400,
-      format: "yaml",
-      type: "http",
-    },
     google_ip: {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.yaml",
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/google.yaml",
       path: "./ruleset/google_ip.yaml",
       behavior: "ipcidr",
       interval: 86400,
       format: "yaml",
       type: "http",
     },
+	// Microsoft
+    microsoft: {
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google.yaml",
+      path: "./ruleset/microsoft.yaml",
+      behavior: "domain",
+      interval: 86400,
+      format: "yaml",
+      type: "http",
+    },
+	// YouTube
     youtube_domain: {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.yaml",
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/youtube.yaml",
       path: "./ruleset/youtube_domain.yaml",
       behavior: "domain",
       interval: 86400,
@@ -238,22 +246,41 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-    netflix_ip: {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.yaml",
-      path: "./ruleset/netflix_domain.yaml",
-      behavior: "domain",
-      interval: 86400,
-      format: "yaml",
-      type: "http",
-    },
+	// Netflix
     netflix_domain: {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.yaml",
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/netflix.yaml",
       path: "./ruleset/netflix_ip.yaml",
       behavior: "ipcidr",
       interval: 86400,
       format: "yaml",
       type: "http",
     },
+    netflix_ip: {
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/netflix.yaml",
+      path: "./ruleset/netflix_domain.yaml",
+      behavior: "domain",
+      interval: 86400,
+      format: "yaml",
+      type: "http",
+    },
+	// 哔哩哔哩
+    bilibili_domain: {
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geosite/bilibili.yaml",
+      path: "./ruleset/bilibili_domain.yaml",
+      behavior: "domain",
+      interval: 86400,
+      format: "yaml",
+      type: "http",
+    },
+    bilibili_ip: {
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geoip/bilibili.yaml",
+      path: "./ruleset/bilibili_ip.yaml",
+      behavior: "ipcidr",
+      interval: 86400,
+      format: "yaml",
+      type: "http",
+    },
+	// Steam
     steam: {
       url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/steam.yaml",
       path: "./ruleset/steam.yaml",
@@ -262,10 +289,20 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
+	// Epic
     epic: {
-      url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.yaml",
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/epicgames.yaml",
       path: "./ruleset/epic.yaml",
-      behavior: "classical",
+      behavior: "domain",
+      interval: 86400,
+      format: "yaml",
+      type: "http",
+    },
+	// EA 
+    ea: {
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/ea.yaml",
+      path: "./ruleset/ea.yaml",
+      behavior: "domain",
       interval: 86400,
       format: "yaml",
       type: "http",
@@ -273,22 +310,25 @@ function main(config) {
   });
 
   config["rules"] = [
-    "RULE-SET,private,DIRECT",
-    "RULE-SET,steam,Steam",
-    "RULE-SET,epic,Epic",
-    "RULE-SET,bilibili1_domain,哔哩哔哩",
-    "RULE-SET,bilibili2_domain,哔哩哔哩",
-    "RULE-SET,youtube_domain,Youtube",
-    "RULE-SET,youtube_ip,Youtube",
-    "RULE-SET,netflix_domain,Netflix",
-    "rULE-SET,netflix_ip,Netflix",
+    "RULE-SET,private_domain,DIRECT",
+    "RULE-SET,private_ip,DIRECT",
+    "RULE-SET,cn_domain,DIRECT",
+    "RULE-SET,cn_ip,DIRECT",
+    "RULE-SET,geolocation-!cn,手动选择",
     "RULE-SET,telegram_domain,Telegram",
     "RULE-SET,telegram_ip,Telegram",
     "RULE-SET,google_domain,Google",
     "RULE-SET,google_ip,Google",
-    "RULE-SET,geolocation-!cn,手动选择",
-    "RULE-SET,cn_domain,DIRECT",
-    "RULE-SET,cn_ip,DIRECT",
+	"RULE-SET,microsoft,Microsoft",
+    "RULE-SET,youtube_domain,Youtube",
+    "RULE-SET,youtube_ip,Youtube",
+    "RULE-SET,netflix_domain,Netflix",
+    "rULE-SET,netflix_ip,Netflix",
+    "RULE-SET,bilibili_domain,哔哩哔哩",
+    "RULE-SET,bilibili_ip,哔哩哔哩",
+    "RULE-SET,steam,Steam",
+    "RULE-SET,epic,Epic",
+    "RULE-SET,ea,EA",
     "MATCH,手动选择",
   ];
   return config;
