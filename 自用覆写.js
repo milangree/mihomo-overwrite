@@ -169,7 +169,7 @@ function main(config) {
       type: "http",
     },
     ads_domain: {
-      url: "https://anti-ad.net/clash.yaml",
+      url: "https://anti-ad.net/easylist.txt",
       path: "./ruleset/ads_domain.yaml",
       behavior: "domain",
       interval: 86400,
